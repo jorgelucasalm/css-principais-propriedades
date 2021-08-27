@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Varela+Round&display=swap');
+
+* {
+  margin: 0;
+}
+
+span {
+  text-decoration: line-through;
+}
+
+body {
+  background: aquamarine;
+}
+
+img {
+  border: 2px solid gray;
+  border-radius: 9px;
+  padding: .5rem;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  padding: 1rem;
+  font-size: 2rem;
+  font-family: Verdana;
+  color: #d2a804;
+}
+
+section h1 {
+  padding: 3rem 0;
+}
+
+header img {
+  width: 500px;
+}
+
+h1,
+h2, 
+ul, 
+ol {
+  margin-bottom: 1rem;
+} 
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main section img {
+  width: 64px;
+}
+
+main section {
+  width: 500px;
+}
+
+main section h2 {
+  text-transform: uppercase;
+  text-align: center;
+  color: #8f7303;
+  font-family: 'Varela Round';
+}
+
+main section li {
+  font-family: 'Nunito';
+}
+
+main section ol {
+  padding: 0;
+  list-style: none;
+  counter-reset: item;
+}
+
+main section ol li {
+  margin-bottom: 10px;
+  counter-increment: item;
+  position: relative;
+  padding-left: 35px;
+}
+
+main section ol li:before {
+  content: counter(item);
+  
+  position: absolute;
+  left: -5px;
+
+  padding: 0 8px;
+  font-size: 20px;
+  color: #444;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 0 1rem 0;
+}
